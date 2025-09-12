@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>LGPD e Segurança da Informação | Gabriel Marini</title>
+    <link rel="icon" type="image/png" href="../../favicon.png">
+    <link rel="stylesheet" href="cartilha.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="matrix-bg">
+        <canvas id="matrix-canvas"></canvas>
+    </div>
+
+    <nav class="cartilha-nav">
+        <div class="nav-container">
+            <a href="../../index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                <span>Voltar ao TechHub</span>
+            </a>
+            <div class="nav-title">
+                <span class="nav-bracket">[</span>
+                <span>LGPD.PDF</span>
+                <span class="nav-bracket">]</span>
+            </div>
+            <div class="progress-indicator">
+                <span class="progress-text">Página <span id="currentPage">1</span> de 7</span>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="scroll-indicator">
+        <div class="scroll-progress"></div>
+    </div>
+
+    <main class="cartilha-container">
+        <!-- Página 1 - Capa -->
+        <section class="cartilha-page" data-page="1">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-1.jpg" alt="Capa - LGPD e Segurança da Informação" loading="lazy">
+                    <div class="image-overlay">
+                        <div class="page-info">
+                            <div class="tag metodologia">PROTEÇÃO DE DADOS</div>
+                            <h1 class="page-title glitch-text" data-text="LGPD E SEGURANÇA DA INFORMAÇÃO">LGPD E SEGURANÇA DA INFORMAÇÃO</h1>
+                            <p class="page-subtitle">O QUE VOCÊ PRECISA SABER</p>
+                            <div class="author-info">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user-astronaut"></i>
+                                </div>
+                                <div class="author-details">
+                                    <span class="author-name">Gabriel Marini</span>
+                                    <span class="author-role">ADS Student | UNIP</span>
+                                </div>
+                            </div>
+                            <div class="page-meta">
+                                <span class="meta-item">
+                                    <i class="fas fa-file-alt"></i>
+                                    7 páginas
+                                </span>
+                                <span class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    ~10 min
+                                </span>
+                                <span class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    2025
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-description">
+                    <h2>Proteção de Dados</h2>
+                    <p>Garanta que os dados pessoais sejam tratados de forma segura e legítima.</p>
+                    <div class="topics-grid">
+                        <div class="topic-item">
+                            <i class="fas fa-user-shield"></i>
+                            <span>Proteção de Dados</span>
+                        </div>
+                        <div class="topic-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Consentimento</span>
+                        </div>
+                        <div class="topic-item">
+                            <i class="fas fa-lock"></i>
+                            <span>Prevenção</span>
+                        </div>
+                        <div class="topic-item">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>Boas Práticas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <span>Role para continuar</span>
+            </div>
+        </section>
+
+        <!-- Página 2 -->
+        <section class="cartilha-page" data-page="2">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-2.jpg" alt="Página 2 - LGPD" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>O QUE É A LGPD?</h2>
+                        <div class="page-number">02/07</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>A LGPD (Lei Geral de Proteção de Dados) é uma lei brasileira que protege os dados pessoais dos cidadãos.
+Ela exige que empresas informem como usam seus dados e dá mais controle para os usuários sobre suas informações.</p>
+                        
+                        <div class="highlight-box">
+                            <h3><i class="fas fa-gavel"></i> Propósito da LGPD</h3>
+                            <ul>
+                                <li>Proteção de dados pessoais</li>
+                                <li>Transparência no uso de dados</li>
+                                <li>Controle do usuário sobre suas informações</li>
+                                <li>Regulamentação para empresas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 3 -->
+        <section class="cartilha-page" data-page="3">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-3.jpg" alt="Página 3 - Dados Protegidos" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>QUAIS DADOS SÃO PROTEGIDOS PELA LGPD?</h2>
+                        <div class="page-number">03/07</div>
+                    </div>
+                    <div class="analysis-content">
+                        <div class="data-list">
+                            <div class="data-item">
+                                <i class="fas fa-id-card"></i>
+                                <span>Nome, CPF, RG</span>
+                            </div>
+                            <div class="data-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Endereço e localização</span>
+                            </div>
+                            <div class="data-item">
+                                <i class="fas fa-money-check-alt"></i>
+                                <span>Dados bancários</span>
+                            </div>
+                            <div class="data-item">
+                                <i class="fas fa-globe"></i>
+                                <span>Histórico de navegação</span>
+                            </div>
+                            <div class="data-item">
+                                <i class="fas fa-heartbeat"></i>
+                                <span>Saúde, religião e fotos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 4 -->
+        <section class="cartilha-page" data-page="4">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-4.jpg" alt="Página 4 - Seus Direitos" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>QUAIS SÃO SEUS DIREITOS?</h2>
+                        <div class="page-number">04/07</div>
+                    </div>
+                    <div class="analysis-content">
+                        <div class="rights-list">
+                            <div class="right-item">
+                                <i class="fas fa-info-circle"></i>
+                                <span>Saber quais dados a empresa possui</span>
+                            </div>
+                            <div class="right-item">
+                                <i class="fas fa-edit"></i>
+                                <span>Pedir correção ou exclusão</span>
+                            </div>
+                            <div class="right-item">
+                                <i class="fas fa-undo-alt"></i>
+                                <span>Revogar consentimento</span>
+                            </div>
+                            <div class="right-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Exigir segurança no armazenamento</span>
+                            </div>
+                        </div>
+                        <p class="highlight-text">Você tem o direito de controlar seus dados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 5 -->
+        <section class="cartilha-page" data-page="5">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-5.jpg" alt="Página 5 - Segurança da Informação" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>O QUE É SEGURANÇA DA INFORMAÇÃO?</h2>
+                        <div class="page-number">05/07</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>É o conjunto de práticas e tecnologias que protegem informações contra acessos não autorizados, vazamentos, fraudes e perdas.</p>
+                        <p class="highlight-text">Segurança não é só sobre senhas, mas sobre hábitos e sistemas seguros.</p>
+                        <div class="security-aspects">
+                            <div class="aspect-item">
+                                <i class="fas fa-user-secret"></i>
+                                <span>Confidencialidade</span>
+                            </div>
+                            <div class="aspect-item">
+                                <i class="fas fa-check-double"></i>
+                                <span>Integridade</span>
+                            </div>
+                            <div class="aspect-item">
+                                <i class="fas fa-globe-americas"></i>
+                                <span>Disponibilidade</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 6 -->
+        <section class="cartilha-page" data-page="6">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-6.jpg" alt="Página 6 - Dicas de Proteção" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>DICAS para proteger seus dados</h2>
+                        <div class="page-number">06/07</div>
+                    </div>
+                    <div class="analysis-content">
+                        <div class="tips-list">
+                            <div class="tip-item">
+                                <i class="fas fa-key"></i>
+                                <span>Use senhas fortes e diferentes para cada conta</span>
+                            </div>
+                            <div class="tip-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Ative a verificação em duas etapas</span>
+                            </div>
+                            <div class="tip-item">
+                                <i class="fas fa-envelope-open-text"></i>
+                                <span>Cuidado com links e e-mails suspeitos</span>
+                            </div>
+                            <div class="tip-item">
+                                <i class="fas fa-wifi"></i>
+                                <span>Evite Wi-Fi público sem proteção</span>
+                            </div>
+                            <div class="tip-item">
+                                <i class="fas fa-sync-alt"></i>
+                                <span>Atualize seus aplicativos e antivírus</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 7 -->
+        <section class="cartilha-page" data-page="7">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-7.jpg" alt="Página 7 - Privacidade é um Direito Seu" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>PRIVACIDADE É UM DIREITO SEU</h2>
+                        <div class="page-number">07/07</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>Seus dados valem muito. Proteger suas informações é proteger sua identidade, sua segurança e sua liberdade digital.</p>
+                        <p class="highlight-text">LGPD é mais do que lei: é respeito ao cidadão.</p>
+                        <div class="final-message">
+                            <i class="fas fa-handshake"></i>
+                            <span>Mantenha-se seguro e informado!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="cartilha.js"></script>
+    <script src="../../js/matrix.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+</html>
+

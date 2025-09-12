@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Internet das Coisas - A Tecnologia que Conecta o Mundo | Gabriel Marini</title>
+    <link rel="icon" type="image/png" href="../../favicon.png">
+    <link rel="stylesheet" href="cartilha.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="matrix-bg">
+        <canvas id="matrix-canvas"></canvas>
+    </div>
+
+    <nav class="cartilha-nav">
+        <div class="nav-container">
+            <a href="../../index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                <span>Voltar ao TechHub</span>
+            </a>
+            <div class="nav-title">
+                <span class="nav-bracket">[</span>
+                <span>IOT.PDF</span>
+                <span class="nav-bracket">]</span>
+            </div>
+            <div class="progress-indicator">
+                <span class="progress-text">Página <span id="currentPage">1</span> de 7</span>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="scroll-indicator">
+        <div class="scroll-progress"></div>
+    </div>
+
+    <main class="cartilha-container">
+        <!-- Página 1 - Capa -->
+        <section class="cartilha-page" data-page="1">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-1.jpg" alt="Capa - Internet das Coisas" loading="lazy">
+                    <div class="image-overlay">
+                        <div class="page-info">
+                            <div class="tag tecnologia">TECNOLOGIA</div>
+                            <h1 class="page-title glitch-text" data-text="INTERNET DAS COISAS">INTERNET DAS COISAS</h1>
+                            <p class="page-subtitle">A Tecnologia que Conecta o Mundo</p>
+                            <div class="author-info">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user-astronaut"></i>
+                                </div>
+                                <div class="author-details">
+                                    <span class="author-name">Gabriel Marini</span>
+                                    <span class="author-role">ADS Student | UNIP</span>
+                                </div>
+                            </div>
+                            <div class="page-meta">
+                                <span class="meta-item">
+                                    <i class="fas fa-file-alt"></i>
+                                    7 páginas
+                                </span>
+                                <span class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    ~10 min
+                                </span>
+                                <span class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    2025
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-description">
+                    <h2>Sobre esta Cartilha</h2>
+                    <p>Descubra como a Internet das Coisas está revolucionando nossa forma de viver e trabalhar. Explore os conceitos, aplicações e o futuro desta tecnologia transformadora.</p>
+                    <div class="topics-grid">
+                        <div class="topic-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Conceitos Fundamentais</span>
+                        </div>
+                        <div class="topic-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Conectividade e Protocolos</span>
+                        </div>
+                        <div class="topic-item">
+                            <i class="fas fa-industry"></i>
+                            <span>Aplicações Industriais</span>
+                        </div>
+                        <div class="topic-item">
+                            <i class="fas fa-home"></i>
+                            <span>Smart Home e Cidades</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <span>Role para continuar</span>
+            </div>
+        </section>
+
+        <!-- Página 2 -->
+        <section class="cartilha-page" data-page="2">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-2.jpg" alt="Página 2 - IoT" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>O que é Internet das Coisas?</h2>
+                        <div class="page-number">02/07</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>A Internet das Coisas (IoT) é uma rede de dispositivos físicos conectados que coletam e compartilham dados através da internet. Estes dispositivos, desde sensores simples até máquinas complexas, trabalham juntos para criar um ecossistema inteligente e interconectado.</p>
+                        
+                        <div class="highlight-box">
+                            <h3><i class="fas fa-wifi"></i> Características da IoT</h3>
+                            <ul>
+                                <li>Conectividade ubíqua</li>
+                                <li>Coleta de dados em tempo real</li>
+                                <li>Automação inteligente</li>
+                                <li>Análise preditiva</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 3 -->
+        <section class="cartilha-page" data-page="3">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-3.jpg" alt="Página 3 - IoT" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>Como Funciona a IoT?</h2>
+                        <div class="page-number">03/07</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>O funcionamento da IoT baseia-se em quatro componentes principais que trabalham em conjunto para criar um sistema inteligente e responsivo.</p>
+                        
+                        <div class="process-flow">
+                            <div class="flow-item">
+                                <div class="flow-icon">
+                                    <i class="fas fa-microchip"></i>
+                                </div>
+                                <h4>Sensores</h4>
+                                <p>Coletam dados do ambiente</p>
+                            </div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-item">
+                                <div class="flow-icon">
+                                    <i class="fas fa-wifi"></i>
+                                </div>
+                                <h4>Conectividade</h4>
+                                <p>Transmitem dados via rede</p>
+                            </div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-item">
+                                <div class="flow-icon">
+                                    <i class="fas fa-cloud"></i>
+                                </div>
+                                <h4>Processamento</h4>
+                                <p>Analisam e processam dados</p>
+                            </div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-item">
+                                <div class="flow-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <h4>Interface</h4>
+                                <p>Apresentam informações ao usuário</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 4 -->
+        <section class="cartilha-page" data-page="4">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-4.jpg" alt="Página 4 - IoT" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>Tecnologias de Conectividade</h2>
+                        <div class="page-number">04/07</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>A IoT utiliza diversas tecnologias de comunicação, cada uma adequada para diferentes cenários e necessidades específicas.</p>
+                        
+                        <div class="connectivity-grid">
+                            <div class="connectivity-card">
+                                <div class="connectivity-icon">
+                                    <i class="fas fa-wifi"></i>
+                                </div>
+                                <h4>Wi-Fi</h4>
+                                <p>Alta velocidade, curto alcance</p>
+                                <div class="connectivity-specs">
+                                    <span>Alcance: 50-100m</span>
+                                    <span>Velocidade: Alta</span>
+                                    <span>Consumo: Médio</span>
+                                </div>
+                            </div>
+                            <div class="connectivity-card">
+                                <div class="connectivity-icon">
+                                    <i class="fas fa-broadcast-tower"></i>
+                                </div>
+                                <h4>Bluetooth</h4>
+                                <p>Baixo consumo, proximidade</p>
+                                <div class="connectivity-specs">
+                                    <span>Alcance: 10-100m</span>
+                                    <span>Velocidade: Média</span>
+                                    <span>Consumo: Baixo</span>
+                                </div>
+                            </div>
+                            <div class="connectivity-card">
+                                <div class="connectivity-icon">
+                                    <i class="fas fa-satellite"></i>
+                                </div>
+                                <h4>LoRaWAN</h4>
+                                <p>Longo alcance, baixo consumo</p>
+                                <div class="connectivity-specs">
+                                    <span>Alcance: 2-15km</span>
+                                    <span>Velocidade: Baixa</span>
+                                    <span>Consumo: Muito baixo</span>
+                                </div>
+                            </div>
+                            <div class="connectivity-card">
+                                <div class="connectivity-icon">
+                                    <i class="fas fa-signal"></i>
+                                </div>
+                                <h4>5G/LTE</h4>
+                                <p>Cobertura ampla, alta velocidade</p>
+                                <div class="connectivity-specs">
+                                    <span>Alcance: Km</span>
+                                    <span>Velocidade: Muito alta</span>
+                                    <span>Consumo: Alto</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 5 -->
+        <section class="cartilha-page" data-page="5">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-5.jpg" alt="Página 5 - IoT" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>Aplicações da IoT</h2>
+                        <div class="page-number">05/07</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>A Internet das Coisas está transformando diversos setores, criando novas oportunidades e melhorando a eficiência em múltiplas áreas.</p>
+                        
+                        <div class="applications-grid">
+                            <div class="application-card">
+                                <div class="application-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <h4>Smart Home</h4>
+                                <p>Automação residencial inteligente</p>
+                                <div class="application-examples">
+                                    <span>Termostatos</span>
+                                    <span>Iluminação</span>
+                                    <span>Segurança</span>
+                                </div>
+                            </div>
+                            <div class="application-card">
+                                <div class="application-icon">
+                                    <i class="fas fa-industry"></i>
+                                </div>
+                                <h4>Indústria 4.0</h4>
+                                <p>Manufatura inteligente e conectada</p>
+                                <div class="application-examples">
+                                    <span>Manutenção preditiva</span>
+                                    <span>Otimização</span>
+                                    <span>Qualidade</span>
+                                </div>
+                            </div>
+                            <div class="application-card">
+                                <div class="application-icon">
+                                    <i class="fas fa-heartbeat"></i>
+                                </div>
+                                <h4>Saúde</h4>
+                                <p>Monitoramento e cuidados médicos</p>
+                                <div class="application-examples">
+                                    <span>Wearables</span>
+                                    <span>Telemedicina</span>
+                                    <span>Diagnósticos</span>
+                                </div>
+                            </div>
+                            <div class="application-card">
+                                <div class="application-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <h4>Transporte</h4>
+                                <p>Mobilidade inteligente e conectada</p>
+                                <div class="application-examples">
+                                    <span>Veículos autônomos</span>
+                                    <span>Gestão de tráfego</span>
+                                    <span>Logística</span>
+                                </div>
+                            </div>
+                            <div class="application-card">
+                                <div class="application-icon">
+                                    <i class="fas fa-seedling"></i>
+                                </div>
+                                <h4>Agricultura</h4>
+                                <p>Farming inteligente e sustentável</p>
+                                <div class="application-examples">
+                                    <span>Irrigação</span>
+                                    <span>Monitoramento</span>
+                                    <span>Produtividade</span>
+                                </div>
+                            </div>
+                            <div class="application-card">
+                                <div class="application-icon">
+                                    <i class="fas fa-city"></i>
+                                </div>
+                                <h4>Cidades Inteligentes</h4>
+                                <p>Infraestrutura urbana conectada</p>
+                                <div class="application-examples">
+                                    <span>Energia</span>
+                                    <span>Resíduos</span>
+                                    <span>Mobilidade</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 6 -->
+        <section class="cartilha-page" data-page="6">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-6.jpg" alt="Página 6 - IoT" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>Desafios e Segurança</h2>
+                        <div class="page-number">06/07</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>Apesar do potencial transformador, a IoT enfrenta desafios significativos que precisam ser endereçados para garantir sua adoção segura e eficaz.</p>
+                        
+                        <div class="challenges-grid">
+                            <div class="challenge-item">
+                                <div class="challenge-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h4>Segurança</h4>
+                                <p>Proteção contra ataques cibernéticos e vazamentos de dados</p>
+                                <div class="challenge-solutions">
+                                    <span>Criptografia</span>
+                                    <span>Autenticação</span>
+                                    <span>Updates regulares</span>
+                                </div>
+                            </div>
+                            <div class="challenge-item">
+                                <div class="challenge-icon">
+                                    <i class="fas fa-user-secret"></i>
+                                </div>
+                                <h4>Privacidade</h4>
+                                <p>Controle sobre dados pessoais e informações sensíveis</p>
+                                <div class="challenge-solutions">
+                                    <span>LGPD/GDPR</span>
+                                    <span>Consentimento</span>
+                                    <span>Transparência</span>
+                                </div>
+                            </div>
+                            <div class="challenge-item">
+                                <div class="challenge-icon">
+                                    <i class="fas fa-puzzle-piece"></i>
+                                </div>
+                                <h4>Interoperabilidade</h4>
+                                <p>Compatibilidade entre diferentes dispositivos e plataformas</p>
+                                <div class="challenge-solutions">
+                                    <span>Padrões abertos</span>
+                                    <span>APIs</span>
+                                    <span>Protocolos comuns</span>
+                                </div>
+                            </div>
+                            <div class="challenge-item">
+                                <div class="challenge-icon">
+                                    <i class="fas fa-expand-arrows-alt"></i>
+                                </div>
+                                <h4>Escalabilidade</h4>
+                                <p>Gerenciamento de milhões de dispositivos conectados</p>
+                                <div class="challenge-solutions">
+                                    <span>Cloud computing</span>
+                                    <span>Edge computing</span>
+                                    <span>5G</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 7 - Futuro -->
+        <section class="cartilha-page" data-page="7">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-7.jpg" alt="Página 7 - IoT" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>O Futuro da IoT</h2>
+                        <div class="page-number">07/07</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>A Internet das Coisas continuará evoluindo, impulsionada por avanços tecnológicos e crescente demanda por soluções inteligentes e conectadas.</p>
+                        
+                        <div class="future-trends">
+                            <div class="trend-item">
+                                <div class="trend-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h4>IA e Machine Learning</h4>
+                                <p>Dispositivos mais inteligentes e autônomos</p>
+                            </div>
+                            <div class="trend-item">
+                                <div class="trend-icon">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <h4>Edge Computing</h4>
+                                <p>Processamento local para menor latência</p>
+                            </div>
+                            <div class="trend-item">
+                                <div class="trend-icon">
+                                    <i class="fas fa-signal"></i>
+                                </div>
+                                <h4>5G e 6G</h4>
+                                <p>Conectividade ultra-rápida e confiável</p>
+                            </div>
+                            <div class="trend-item">
+                                <div class="trend-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <h4>Sustentabilidade</h4>
+                                <p>IoT verde e eficiência energética</p>
+                            </div>
+                        </div>
+                        
+                        <div class="statistics-box">
+                            <h3><i class="fas fa-chart-line"></i> Projeções para 2030</h3>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <span class="stat-number">75 bi</span>
+                                    <span class="stat-label">Dispositivos conectados</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">$12.6 tri</span>
+                                    <span class="stat-label">Valor de mercado global</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">200 bi</span>
+                                    <span class="stat-label">Sensores instalados</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">90%</span>
+                                    <span class="stat-label">Empresas usando IoT</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="conclusion-box">
+                            <h3><i class="fas fa-rocket"></i> Conclusão</h3>
+                            <p>A Internet das Coisas representa uma revolução tecnológica que está redefinindo como interagimos com o mundo ao nosso redor. Desde casas inteligentes até cidades conectadas, a IoT oferece oportunidades infinitas para melhorar nossa qualidade de vida, aumentar a eficiência e criar soluções inovadoras para os desafios globais.</p>
+                        </div>
+                        
+                        <div class="next-steps">
+                            <h4>Como se Preparar:</h4>
+                            <div class="steps-list">
+                                <div class="step-item">
+                                    <span class="step-number">1</span>
+                                    <span>Estude tecnologias emergentes</span>
+                                </div>
+                                <div class="step-item">
+                                    <span class="step-number">2</span>
+                                    <span>Desenvolva projetos práticos</span>
+                                </div>
+                                <div class="step-item">
+                                    <span class="step-number">3</span>
+                                    <span>Mantenha-se atualizado</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="cartilha-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy;  Gabriel Marini | UNIP - ADS | Material Educativo</p>
+            </div>
+            <div class="footer-actions">
+                <a href="../../index.html" class="footer-btn">
+                    <i class="fas fa-home"></i>
+                    Voltar ao Início
+                </a>
+                <a href="../scrum/index.html" class="footer-btn">
+                    <i class="fas fa-sync-alt"></i>
+                    Cartilha Anterior: Scrum
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cartilha.js"></script>
+</body>
+</html>
+

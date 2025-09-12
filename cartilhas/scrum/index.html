@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Scrum - Organizando Projeto de Forma Ágil | Gabriel Marini</title>
+    <link rel="icon" type="image/png" href="../../favicon.png">
+    <link rel="stylesheet" href="cartilha.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="matrix-bg">
+        <canvas id="matrix-canvas"></canvas>
+    </div>
+
+    <nav class="cartilha-nav">
+        <div class="nav-container">
+            <a href="../../index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                <span>Voltar ao TechHub</span>
+            </a>
+            <div class="nav-title">
+                <span class="nav-bracket">[</span>
+                <span>SCRUM.PDF</span>
+                <span class="nav-bracket">]</span>
+            </div>
+            <div class="progress-indicator">
+                <span class="progress-text">Página <span id="currentPage">1</span> de 7</span>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="scroll-indicator">
+        <div class="scroll-progress"></div>
+    </div>
+
+    <main class="cartilha-container">
+        <!-- Página 1 - Capa -->
+        <section class="cartilha-page" data-page="1">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-1.jpg" alt="Capa - Scrum" loading="lazy">
+                    <div class="image-overlay">
+                        <div class="page-info">
+                            <div class="tag metodologia">METODOLOGIA ÁGIL</div>
+                            <h1 class="page-title glitch-text" data-text="SCRUM">SCRUM</h1>
+                            <p class="page-subtitle">Organizando Projeto de Forma Ágil</p>
+                            <div class="author-info">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user-astronaut"></i>
+                                </div>
+                                <div class="author-details">
+                                    <span class="author-name">Gabriel Marini</span>
+                                    <span class="author-role">ADS Student | UNIP</span>
+                                </div>
+                            </div>
+                            <div class="page-meta">
+                                <span class="meta-item">
+                                    <i class="fas fa-file-alt"></i>
+                                    7 páginas
+                                </span>
+                                <span class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    ~10 min
+                                </span>
+                                <span class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    2025
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-description">
+                    <h2>Sobre esta Cartilha</h2>
+                    <p>Uma forma simples, colaborativa e eficiente de tirar ideias do papel através da metodologia ágil Scrum. Descubra como organizar projetos de forma mais eficaz e produtiva.</p>
+                    <div class="topics-grid">
+                        <div class="topic-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Conceitos Fundamentais</span>
+                        </div>
+                        <div class="topic-item">
+                            <i class="fas fa-users"></i>
+                            <span>Papéis e Responsabilidades</span>
+                        </div>
+                        <div class="topic-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Eventos e Cerimônias</span>
+                        </div>
+                        <div class="topic-item">
+                            <i class="fas fa-tools"></i>
+                            <span>Artefatos e Ferramentas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <span>Role para continuar</span>
+            </div>
+        </section>
+
+        <!-- Página 2 -->
+        <section class="cartilha-page" data-page="2">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-2.jpg" alt="Página 2 - Scrum" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>Introdução ao Scrum</h2>
+                        <div class="page-number">02/07</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>O Scrum é uma metodologia ágil que revoluciona a forma como desenvolvemos projetos. Baseado em princípios de transparência, inspeção e adaptação, o Scrum oferece um framework flexível para gerenciar trabalho complexo.</p>
+                        
+                        <div class="highlight-box">
+                            <h3><i class="fas fa-rocket"></i> Por que Scrum?</h3>
+                            <ul>
+                                <li>Entrega de valor contínua</li>
+                                <li>Adaptabilidade a mudanças</li>
+                                <li>Melhoria contínua do processo</li>
+                                <li>Maior colaboração da equipe</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 3 -->
+        <section class="cartilha-page" data-page="3">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-3.jpg" alt="Página 3 - Scrum" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>Como o Scrum Funciona?</h2>
+                        <div class="page-number">03/07</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>O Scrum funciona através de ciclos iterativos chamados Sprints, onde pequenas partes do produto são desenvolvidas e entregues. Cada Sprint tem duração fixa e resulta em um incremento potencialmente utilizável do produto.</p>
+                        
+                        <div class="process-flow">
+                            <div class="flow-item">
+                                <div class="flow-icon">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <h4>Sprint Planning</h4>
+                                <p>Planejamento do que será desenvolvido</p>
+                            </div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-item">
+                                <div class="flow-icon">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <h4>Development</h4>
+                                <p>Desenvolvimento do produto</p>
+                            </div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-item">
+                                <div class="flow-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <h4>Sprint Review</h4>
+                                <p>Apresentação dos resultados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 4 -->
+        <section class="cartilha-page" data-page="4">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-4.jpg" alt="Página 4 - Scrum" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>Papéis no Scrum</h2>
+                        <div class="page-number">04/07</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>O Scrum define três papéis fundamentais, cada um com responsabilidades específicas para garantir o sucesso do projeto.</p>
+                        
+                        <div class="roles-grid">
+                            <div class="role-card">
+                                <div class="role-icon">
+                                    <i class="fas fa-crown"></i>
+                                </div>
+                                <h4>Product Owner</h4>
+                                <p>Responsável por definir e priorizar os requisitos do produto</p>
+                            </div>
+                            <div class="role-card">
+                                <div class="role-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h4>Scrum Master</h4>
+                                <p>Facilita o processo e remove impedimentos da equipe</p>
+                            </div>
+                            <div class="role-card">
+                                <div class="role-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h4>Development Team</h4>
+                                <p>Equipe multifuncional que desenvolve o produto</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 5 -->
+        <section class="cartilha-page" data-page="5">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-5.jpg" alt="Página 5 - Scrum" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>Eventos do Scrum</h2>
+                        <div class="page-number">05/07</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>O Scrum utiliza eventos time-boxed para criar regularidade e minimizar a necessidade de reuniões não definidas no framework.</p>
+                        
+                        <div class="events-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Sprint Planning</h4>
+                                    <p>Reunião para planejar o trabalho da Sprint</p>
+                                    <span class="duration">8h (Sprint de 1 mês)</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Daily Scrum</h4>
+                                    <p>Reunião diária de sincronização</p>
+                                    <span class="duration">15 min</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Sprint Review</h4>
+                                    <p>Apresentação do incremento desenvolvido</p>
+                                    <span class="duration">4h (Sprint de 1 mês)</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Sprint Retrospective</h4>
+                                    <p>Reflexão sobre o processo e melhorias</p>
+                                    <span class="duration">3h (Sprint de 1 mês)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 6 -->
+        <section class="cartilha-page" data-page="6">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-6.jpg" alt="Página 6 - Scrum" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>Artefatos do Scrum</h2>
+                        <div class="page-number">06/07</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>Os artefatos do Scrum representam trabalho ou valor e são projetados para maximizar a transparência das informações chave.</p>
+                        
+                        <div class="artifacts-grid">
+                            <div class="artifact-card">
+                                <div class="artifact-icon">
+                                    <i class="fas fa-list"></i>
+                                </div>
+                                <h4>Product Backlog</h4>
+                                <p>Lista ordenada de tudo que é conhecido ser necessário no produto</p>
+                                <div class="artifact-features">
+                                    <span>Dinâmico</span>
+                                    <span>Priorizado</span>
+                                    <span>Detalhado</span>
+                                </div>
+                            </div>
+                            <div class="artifact-card">
+                                <div class="artifact-icon">
+                                    <i class="fas fa-tasks"></i>
+                                </div>
+                                <h4>Sprint Backlog</h4>
+                                <p>Conjunto de itens selecionados para a Sprint atual</p>
+                                <div class="artifact-features">
+                                    <span>Específico</span>
+                                    <span>Comprometido</span>
+                                    <span>Executável</span>
+                                </div>
+                            </div>
+                            <div class="artifact-card">
+                                <div class="artifact-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h4>Incremento</h4>
+                                <p>Soma de todos os itens completados durante a Sprint</p>
+                                <div class="artifact-features">
+                                    <span>Utilizável</span>
+                                    <span>Testado</span>
+                                    <span>Entregável</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 7 - Conclusão -->
+        <section class="cartilha-page" data-page="7">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-7.jpg" alt="Página 7 - Scrum" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>Benefícios do Scrum</h2>
+                        <div class="page-number">07/07</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>A implementação do Scrum traz diversos benefícios para organizações que buscam maior agilidade e eficiência no desenvolvimento de produtos.</p>
+                        
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <h4>Maior Velocidade</h4>
+                                <p>Entregas mais rápidas e frequentes</p>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-sync-alt"></i>
+                                <h4>Adaptabilidade</h4>
+                                <p>Resposta rápida a mudanças</p>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-chart-line"></i>
+                                <h4>Qualidade</h4>
+                                <p>Melhoria contínua do produto</p>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-handshake"></i>
+                                <h4>Colaboração</h4>
+                                <p>Maior engajamento da equipe</p>
+                            </div>
+                        </div>
+                        
+                        <div class="conclusion-box">
+                            <h3><i class="fas fa-star"></i> Conclusão</h3>
+                            <p>O Scrum é mais que uma metodologia - é uma mudança de mindset que coloca pessoas, colaboração e adaptabilidade no centro do desenvolvimento. Implementar Scrum significa abraçar a melhoria contínua e a entrega de valor constante.</p>
+                        </div>
+                        
+                        <div class="next-steps">
+                            <h4>Próximos Passos:</h4>
+                            <div class="steps-list">
+                                <div class="step-item">
+                                    <span class="step-number">1</span>
+                                    <span>Forme sua equipe Scrum</span>
+                                </div>
+                                <div class="step-item">
+                                    <span class="step-number">2</span>
+                                    <span>Crie o Product Backlog</span>
+                                </div>
+                                <div class="step-item">
+                                    <span class="step-number">3</span>
+                                    <span>Execute sua primeira Sprint</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="cartilha-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2025 Gabriel Marini | UNIP - ADS | Material Educativo</p>
+            </div>
+            <div class="footer-actions">
+                <a href="../../index.html" class="footer-btn">
+                    <i class="fas fa-home"></i>
+                    Voltar ao Início
+                </a>
+                <a href="../iot/index.html" class="footer-btn">
+                    <i class="fas fa-wifi"></i>
+                    Próxima Cartilha: IoT
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cartilha.js"></script>
+</body>
+</html>
+

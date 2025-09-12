@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Gabriel Marini | TechHub ADS</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="matrix-bg">
+        <canvas id="matrix-canvas"></canvas>
+    </div>
+    
+    <div class="loading-screen">
+        <div class="terminal-loader">
+            <div class="loader-text">
+                <span class="prompt">root@gabriel:~$ </span>
+                <span class="typed-text" id="loadingText"></span>
+                <span class="cursor">|</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-bracket">[</span>
+                <span class="brand-text">GABRIEL.MARINI</span>
+                <span class="brand-bracket">]</span>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link" data-text="./home">/home</a></li>
+                <li><a href="#about" class="nav-link" data-text="./about">/about</a></li>
+                <li><a href="#projects" class="nav-link" data-text="./projects">/projects</a></li>
+                <li><a href="#contact" class="nav-link" data-text="./contact">/contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <div class="terminal-title">gabriel@techhub:~</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">gabriel@techhub:~$ </span>
+                            <span class="command">whoami</span>
+                        </div>
+                        <div class="terminal-output">
+                            <div class="typing-text">
+                                <h1 class="glitch-text" data-text="GABRIEL MARINI">GABRIEL MARINI</h1>
+                                <p class="subtitle">Estudante de Análise e Desenvolvimento de Sistemas</p>
+                                <div class="status-line">
+                                    <span class="status-item">
+                                        <i class="fas fa-circle status-online"></i>
+                                        ONLINE
+                                    </span>
+                                    <span class="status-item">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        UNIP
+                                    </span>
+                                    <span class="status-item">
+                                        <i class="fas fa-code"></i>
+                                        DEVELOPER
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">gabriel@techhub:~$ </span>
+                            <span class="command">ls -la projects/</span>
+                        </div>
+                        <div class="terminal-output">
+                            <div class="file-list">
+                                <div class="file-item">
+                                    <span class="file-permissions">-rw-r--r--</span>
+                                    <span class="file-name">scrum_methodology.pdf</span>
+                                    <span class="file-size">7 pages</span>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-permissions">-rw-r--r--</span>
+                                    <span class="file-name">iot_technology.pdf</span>
+                                    <span class="file-size">7 pages</span>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-permissions">-rw-r--r--</span>
+                                    <span class="file-name">lgpd_security.pdf</span>
+                                    <span class="file-size">7 pages</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">gabriel@techhub:~$ </span>
+                            <span class="command typing-cursor">explore_projects</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#projects" class="cyber-btn primary">
+                        <span class="btn-text">EXPLORAR PROJETOS</span>
+                        <span class="btn-glow"></span>
+                    </a>
+                    <a href="#about" class="cyber-btn secondary">
+                        <span class="btn-text">SOBRE MIM</span>
+                        <span class="btn-glow"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="floating-elements">
+                <div class="hex-grid">
+                    <div class="hex-item" style="--delay: 0s;"><i class="fas fa-microchip"></i></div>
+                    <div class="hex-item" style="--delay: 0.5s;"><i class="fas fa-code"></i></div>
+                    <div class="hex-item" style="--delay: 1s;"><i class="fas fa-wifi"></i></div>
+                    <div class="hex-item" style="--delay: 1.5s;"><i class="fas fa-database"></i></div>
+                    <div class="hex-item" style="--delay: 2s;"><i class="fas fa-network-wired"></i></div>
+                    <div class="hex-item" style="--delay: 2.5s;"><i class="fas fa-robot"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-title">
+                        <span class="section-bracket">&lt;</span>
+                        <h2 class="glitch-text" data-text="ABOUT">ABOUT</h2>
+                        <span class="section-bracket">/&gt;</span>
+                    </div>
+                    <div class="section-subtitle">Desenvolvedor em formação | Entusiasta de tecnologia</div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                            <h3>Gabriel Marini</h3>
+                            <p class="card-role">ADS Student</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <span class="stat-number">03</span>
+                                    <span class="stat-label">Projetos</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">UNIP</span>
+                                    <span class="stat-label">Universidade</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">2025</span>
+                                    <span class="stat-label">Ano</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-lang">JavaScript</span>
+                                <div class="code-buttons">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="code-body">
+                                <pre><code><span class="code-comment">// Sobre Gabriel Marini</span>
+<span class="code-keyword">const</span> <span class="code-variable">gabriel</span> = {
+  <span class="code-property">nome</span>: <span class="code-string">"Gabriel Marini"</span>,
+  <span class="code-property">curso</span>: <span class="code-string">"Análise e Desenvolvimento de Sistemas"</span>,
+  <span class="code-property">universidade</span>: <span class="code-string">"UNIP"</span>,
+  <span class="code-property">interesses</span>: [
+    <span class="code-string">"Metodologias Ágeis"</span>,
+    <span class="code-string">"Internet das Coisas"</span>,
+    <span class="code-string">"LGPD e Segurança da Informação"</span>,
+    <span class="code-string">"Inovação Tecnológica"</span>
+  ],
+  <span class="code-property">objetivo</span>: <span class="code-string">"Compartilhar conhecimento através de projetos educativos"</span>
+};</code></pre>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-title">
+                        <span class="section-bracket">&lt;</span>
+                        <h2 class="glitch-text" data-text="PROJECTS">PROJECTS</h2>
+                        <span class="section-bracket">/&gt;</span>
+                    </div>
+                    <div class="section-subtitle">Cartilhas educativas sobre tecnologia</div>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-project="scrum">
+                        <div class="card-glow"></div>
+                        <div class="card-header">
+                            <div class="project-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <div class="project-status">
+                                <span class="status-dot"></span>
+                                <span>ACTIVE</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">SCRUM</h3>
+                            <p class="project-subtitle">Organizando Projeto de Forma Ágil</p>
+                            <p class="project-description">
+                                Uma forma simples, colaborativa e eficiente de tirar ideias do papel 
+                                através da metodologia ágil Scrum.
+                            </p>
+                            <div class="project-meta">
+                                <span class="meta-item">
+                                    <i class="fas fa-file-alt"></i>
+                                    7 páginas
+                                </span>
+                                <span class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    ~10 min
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="cartilhas/scrum/index.html" class="project-link">
+                                <span>ACESSAR PROJETO</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="iot">
+                        <div class="card-glow"></div>
+                        <div class="card-header">
+                            <div class="project-icon">
+                                <i class="fas fa-wifi"></i>
+                            </div>
+                            <div class="project-status">
+                                <span class="status-dot"></span>
+                                <span>ACTIVE</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">INTERNET DAS COISAS</h3>
+                            <p class="project-subtitle">A Tecnologia que Conecta o Mundo</p>
+                            <p class="project-description">
+                                Descubra como a Internet das Coisas está revolucionando nossa forma 
+                                de viver e trabalhar.
+                            </p>
+                            <div class="project-meta">
+                                <span class="meta-item">
+                                    <i class="fas fa-file-alt"></i>
+                                    7 páginas
+                                </span>
+                                <span class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    ~10 min
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="cartilhas/iot/index.html" class="project-link">
+                                <span>ACESSAR PROJETO</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="lgpd">
+                        <div class="card-glow"></div>
+                        <div class="card-header">
+                            <div class="project-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="project-status">
+                                <span class="status-dot"></span>
+                                <span>ACTIVE</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">LGPD E SEGURANÇA DA INFORMAÇÃO</h3>
+                            <p class="project-subtitle">O Que Você Precisa Saber</p>
+                            <p class="project-description">
+                                Garanta que seus dados pessoais sejam tratados de forma segura e legítima, 
+                                e aprenda a proteger suas informações no mundo digital.
+                            </p>
+                            <div class="project-meta">
+                                <span class="meta-item">
+                                    <i class="fas fa-file-alt"></i>
+                                    7 páginas
+                                </span>
+                                <span class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    ~10 min
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="cartilhas/lgpd/index.html" class="project-link">
+                                <span>ACESSAR PROJETO</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-title">
+                        <span class="section-bracket">&lt;</span>
+                        <h2 class="glitch-text" data-text="CONTACT">CONTACT</h2>
+                        <span class="section-bracket">/&gt;</span>
+                    </div>
+                    <div class="section-subtitle">Conecte-se comigo</div>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="btn-close"></span>
+                                <span class="btn-minimize"></span>
+                                <span class="btn-maximize"></span>
+                            </div>
+                            <div class="terminal-title">contact.sh</div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="prompt">gabriel@techhub:~$ </span>
+                                <span class="command">cat contact.json</span>
+                            </div>
+                            <div class="terminal-output">
+                                <pre><code>{
+  <span class="json-key">"email"</span>: <span class="json-string">"gabriel.marini@email.com"</span>,
+  <span class="json-key">"universidade"</span>: <span class="json-string">"UNIP"</span>,
+  <span class="json-key">"curso"</span>: <span class="json-string">"ADS"</span>,
+  <span class="json-key">"status"</span>: <span class="json-string">"Estudante Ativo"</span>,
+  <span class="json-key">"projetos"</span>: <span class="json-number">3</span>,
+  <span class="json-key">"disponivel"</span>: <span class="json-boolean">true</span>
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="info-cards">
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <h4>Email</h4>
+                                <p>gabriel.marini@email.com</p>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h4>Universidade</h4>
+                                <p>UNIP - ADS</p>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <h4>Projetos</h4>
+                                <p>Atividades de Extensão</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="cyber-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-bracket">[</span>
+                    <span class="brand-text">GABRIEL.MARINI</span>
+                    <span class="brand-bracket">]</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; <span id="currentYear"></span> Gabriel Marini | UNIP - ADS | Fins Acadêmicos</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-indicator">
+        <div class="scroll-progress"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
