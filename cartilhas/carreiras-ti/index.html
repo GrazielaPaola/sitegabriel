@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Carreiras em TI | Gabriel Marini</title>
+    <link rel="icon" type="image/png" href="../../favicon.png">
+    <link rel="stylesheet" href="cartilha.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="matrix-bg">
+        <canvas id="matrix-canvas"></canvas>
+    </div>
+
+    <nav class="cartilha-nav">
+        <div class="nav-container">
+            <a href="../../index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                <span>Voltar ao TechHub</span>
+            </a>
+            <div class="nav-title">
+                <span class="nav-bracket">[</span>
+                <span>CARREIRAS.PDF</span>
+                <span class="nav-bracket">]</span>
+            </div>
+            <div class="progress-indicator">
+                <span class="progress-text">Página <span id="currentPage">1</span> de 9</span>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="scroll-indicator">
+        <div class="scroll-progress"></div>
+    </div>
+
+    <main class="cartilha-container">
+        <!-- Página 1 - Capa -->
+        <section class="cartilha-page" data-page="1">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-1.jpg" alt="Capa - Carreiras em TI" loading="lazy">
+                    <div class="image-overlay">
+                        <div class="page-info">
+                            <div class="tag tecnologia">CARREIRAS TI</div>
+                            <h1 class="page-title glitch-text" data-text="CARREIRAS EM TI">CARREIRAS EM TI</h1>
+                            <p class="page-subtitle">Descubra seu futuro na tecnologia</p>
+                            <div class="author-info">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user-astronaut"></i>
+                                </div>
+                                <div class="author-details">
+                                    <span class="author-name">Gabriel Marini</span>
+                                    <span class="author-role">ADS Student | UNIP</span>
+                                </div>
+                            </div>
+                            <div class="page-meta">
+                                <span class="meta-item">
+                                    <i class="fas fa-file-alt"></i>
+                                    9 páginas
+                                </span>
+                                <span class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    ~10 min
+                                </span>
+                                <span class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    2025
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-description">
+                    <h2>Sobre esta Cartilha</h2>
+                    <p>Explore as diversas áreas da Tecnologia da Informação, descubra oportunidades e saiba onde iniciar sua jornada profissional.</p>
+                    <div class="topics-grid">
+                        <div class="topic-item">
+                            <i class="fas fa-code"></i>
+                            <span>Programação</span>
+                        </div>
+                        <div class="topic-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Redes & Infra</span>
+                        </div>
+                        <div class="topic-item">
+                            <i class="fas fa-headset"></i>
+                            <span>Suporte</span>
+                        </div>
+                        <div class="topic-item">
+                            <i class="fas fa-database"></i>
+                            <span>Dados & Segurança</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <span>Role para continuar</span>
+            </div>
+        </section>
+
+        <!-- Página 2 - Por que escolher TI? -->
+        <section class="cartilha-page" data-page="2">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-2.jpg" alt="Por que escolher TI?" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>Por que escolher TI?</h2>
+                        <div class="page-number">02/09</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>A área de Tecnologia da Informação cresce todos os anos e está entre as mais promissoras do mercado.</p>
+                        <div class="highlight-box">
+                            <h3><i class="fas fa-question-circle"></i> Por que TI?</h3>
+                            <ul>
+                                <li>Evolução constante: novas ferramentas e linguagens surgem o tempo todo.</li>
+                                <li>Alta demanda: a demanda é maior que a quantidade de especialistas.</li>
+                                <li>Atuação em qualquer setor: empresas de todos os setores precisam de TI.</li>
+                                <li>Muitas trilhas: você pode atuar desde programação até segurança digital.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 3 - Programação e Desenvolvimento -->
+        <section class="cartilha-page" data-page="3">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-3.jpg" alt="Programação e Desenvolvimento" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>Programação e Desenvolvimento</h2>
+                        <div class="page-number">03/09</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>O programador é o criador do mundo digital. Ele desenvolve aplicativos, sistemas, jogos e sites que usamos diariamente.</p>
+                        <div class="highlight-box">
+                            <h3><i class="fas fa-code"></i> Onde atuar?</h3>
+                            <ul>
+                                <li>Criação de apps para celular.</li>
+                                <li>Sites e plataformas de e-commerce.</li>
+                                <li>Softwares para empresas.</li>
+                                <li>Jogos digitais.</li>
+                            </ul>
+                        </div>
+                        <p>Onde aprender: plataformas como FreeCodeCamp, W3Schools e Alura Start.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 4 - Redes e Infraestrutura -->
+        <section class="cartilha-page" data-page="4">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-4.jpg" alt="Redes e Infraestrutura" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>Redes e Infraestrutura</h2>
+                        <div class="page-number">04/09</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>Sem redes, nada funciona. Essa área garante que computadores, servidores e dispositivos estejam sempre conectados.</p>
+                        <div class="highlight-box">
+                            <h3><i class="fas fa-network-wired"></i> Áreas de atuação</h3>
+                            <ul>
+                                <li>Montagem e manutenção de redes de computadores.</li>
+                                <li>Administração de servidores.</li>
+                                <li>Internet corporativa.</li>
+                                <li>Cloud computing (computação em nuvem).</li>
+                            </ul>
+                        </div>
+                        <p>Onde aprender: Cisco Networking Academy, Udemy grátis e cursos do Senai Online.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 5 - Suporte Técnico -->
+        <section class="cartilha-page" data-page="5">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-5.jpg" alt="Suporte Técnico" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>Suporte Técnico</h2>
+                        <div class="page-number">05/09</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>O suporte é o “primeiro socorro” da tecnologia. Profissionais dessa área ajudam usuários e empresas a resolver problemas do dia a dia.</p>
+                        <div class="highlight-box">
+                            <h3><i class="fas fa-headset"></i> O que faz?</h3>
+                            <ul>
+                                <li>Configuração de computadores e sistemas.</li>
+                                <li>Instalação de programas.</li>
+                                <li>Solução de falhas e erros.</li>
+                                <li>Atendimento a usuários.</li>
+                            </ul>
+                        </div>
+                        <p>Onde aprender: Fundação Bradesco, Cursos em Vídeo e Microsoft Learn.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 6 - Análise de Dados e Ciência de Dados -->
+        <section class="cartilha-page" data-page="6">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-6.jpg" alt="Análise de Dados e Ciência de Dados" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>Análise de Dados e Ciência de Dados</h2>
+                        <div class="page-number">06/09</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>Vivemos na era da informação, e os analistas de dados transformam números em conhecimento.</p>
+                        <div class="highlight-box">
+                            <h3><i class="fas fa-chart-line"></i> O que faz?</h3>
+                            <ul>
+                                <li>Analisar relatórios de vendas, comportamento de clientes e tendências.</li>
+                                <li>Criar dashboards e gráficos para tomada de decisão.</li>
+                                <li>Usar ferramentas como Excel, Power BI, SQL e Python.</li>
+                            </ul>
+                        </div>
+                        <p>Onde aprender: Google Data Analytics (Coursera), Kaggle e Khan Academy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 7 - Segurança da Informação -->
+        <section class="cartilha-page" data-page="7">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-7.jpg" alt="Segurança da Informação" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>Segurança da Informação</h2>
+                        <div class="page-number">07/09</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>A segurança digital protege informações e sistemas contra invasões e ataques cibernéticos.</p>
+                        <div class="highlight-box">
+                            <h3><i class="fas fa-shield-alt"></i> Áreas de atuação</h3>
+                            <ul>
+                                <li>Criptografia e proteção de dados.</li>
+                                <li>Testes de invasão (pentest).</li>
+                                <li>Monitoramento de redes.</li>
+                                <li>Políticas de segurança para empresas.</li>
+                            </ul>
+                        </div>
+                        <p>Onde aprender: TryHackMe, HackTheBox (iniciante) e cursos do CERT.br.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 8 - Habilidades Importantes -->
+        <section class="cartilha-page" data-page="8">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-8.jpg" alt="Habilidades Importantes" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>Habilidades Importantes</h2>
+                        <div class="page-number">08/09</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>Não basta apenas conhecer ferramentas: para crescer na carreira de TI, você precisa de soft skills e hard skills.</p>
+                        <div class="highlight-box">
+                            <h3><i class="fas fa-lightbulb"></i> Habilidades Essenciais</h3>
+                            <ul>
+                                <li>Raciocínio lógico: base para resolver qualquer problema.</li>
+                                <li>Trabalho em equipe: muitos projetos são colaborativos.</li>
+                                <li>Aprendizado contínuo: a tecnologia muda rápido, e você deve acompanhar.</li>
+                                <li>Resolução de problemas: pensar em soluções criativas é essencial.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página 9 - Conclusão & Próximos Passos -->
+        <section class="cartilha-page" data-page="9">
+            <div class="page-content">
+                <div class="page-image">
+                    <img src="images/pagina-9.jpg" alt="Conclusão" loading="lazy">
+                </div>
+                <div class="page-analysis">
+                    <div class="analysis-header">
+                        <h2>Conclusão & Próximos Passos</h2>
+                        <div class="page-number">09/09</div>
+                    </div>
+                    <div class="analysis-content">
+                        <p>A tecnologia é o presente e o futuro. Que tal começar hoje mesmo? Com tantas áreas e recursos gratuitos disponíveis, o primeiro passo está nas suas mãos!</p>
+                        <div class="conclusion-box">
+                            <h3><i class="fas fa-rocket"></i> Seu Futuro na TI</h3>
+                            <p>A tecnologia é um campo em constante expansão, repleto de oportunidades para quem busca inovação e crescimento. Invista em conhecimento e habilidades para construir uma carreira de sucesso.</p>
+                        </div>
+                        <div class="next-steps">
+                            <h3><i class="fas fa-forward"></i> Próximos Passos</h3>
+                            <ul>
+                                <li>Escolha uma trilha de carreira que te interesse.</li>
+                                <li>Monte um plano de estudo com cursos e projetos.</li>
+                                <li>Crie um portfólio para mostrar suas habilidades.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="cartilha.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const totalPages = 9; // Atualize para o número total de páginas
+            const currentPageSpan = document.getElementById("currentPage");
+            const progressFill = document.getElementById("progressFill");
+            const cartilhaPages = document.querySelectorAll(".cartilha-page");
+
+            function updateProgress() {
+                let currentPage = 1;
+                for (let i = 0; i < cartilhaPages.length; i++) {
+                    const rect = cartilhaPages[i].getBoundingClientRect();
+                    if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                        currentPage = parseInt(cartilhaPages[i].dataset.page);
+                        break;
+                    }
+                }
+                currentPageSpan.textContent = currentPage;
+                progressFill.style.width = `${(currentPage / totalPages) * 100}%`;
+            }
+
+            window.addEventListener("scroll", updateProgress);
+            updateProgress(); // Initial call
+        });
+    </script>
+    <script src="../../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+</body>
+</html>
+
